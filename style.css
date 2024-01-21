@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1 {font-size: 2.6em}
+h2 {font-size: 2.4em;}
+h3 {font-size: 1.8em;}
+p {font-size: 1.25em;}
+ul {list-style: none;}
+li{font-size: 1.20em;}
+
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.color-acento{
+    color: blueviolet;
+}
+
+button {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0 , 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0 , 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(118, 37, 194);
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 15px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 2em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/background-img.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#como-lo-hice .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#my-mentors{
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+#my-mentors .container{
+    padding: 40px 0px;
+}
+
+#my-mentors h2{
+    margin-top: 0;
+}
+
+#my-mentors p{
+    display: none;
+}
+
+#my-mentors .card{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.card:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/background-img.webp");
+}
+
+.card:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/background-img.webp");
+}
+
+.card:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/background-img.webp");
+}
+
+#my-mentors button{
+    color: white;
+}
+#list{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/background-img.webp");
+    padding: 30px;
+}
+
+#list h3{
+    color: white;
+    padding-bottom: 16px;
+}
+
+#list .container{
+    text-align: center;
+}
+
+#list ul{
+    padding: 0;
+}
+
+#list li{
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+}
+
+#conclusion .container{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#conclusion h3{
+    font-size: 7vh;
+    padding: 0;
+    padding-top: 20px;
+}
+
+#conclusion button{
+    margin: 20px 30px;
+}
+
+footer {
+    color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 3.8em;
+    }
+
+    #my-mentors .mentores{
+        display: flex;
+        justify-content: center;
+    }
+
+    #my-mentors p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #my-mentors h3{
+        margin-top: 0;
+    }
+
+    #my-mentors .card{
+        padding: 50px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0 , 0.5)
+    }
+
+    #conclusion .container{
+        height: 60vh;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
